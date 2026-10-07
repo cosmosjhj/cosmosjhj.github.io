@@ -16,33 +16,129 @@
 
   <title>Hojung Jung</title>
 
+  <!-- Source Sans 3 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
-  <main class="container">
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <header class="nav">
+
+    <div class="nav-inner">
+
+      <a class="nav-brand" href="#about">
+        Hojung Jung
+      </a>
+
+      <nav class="nav-links">
+
+        <a href="#about">About</a>
+
+        <a href="#news">News</a>
+
+        <a href="#research">Research</a>
+
+        <a href="#work">Selected Work</a>
+
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
 
 
     <!-- =====================================================
-         PROFILE
+         ABOUT
     ====================================================== -->
 
-    <section class="profile">
-
-      <h1>Hojung Jung</h1>
-
-      <p class="subtitle">
-        Ph.D. Student at KAIST
-      </p>
-
-      <p class="affiliation">
-        Kim Jaechul Graduate School of AI
-      </p>
+    <section class="about" id="about">
 
 
-      <div class="bio">
+      <!-- Left profile column -->
+
+      <div class="about-card">
+
+        <img
+          class="avatar"
+          src="assets/profile.jpg"
+          alt="Hojung Jung"
+        >
+
+
+        <h1 class="about-name">
+          Hojung Jung
+        </h1>
+
+
+        <p class="about-role">
+          Ph.D. Student
+        </p>
+
+
+        <p class="about-org">
+          KAIST AI
+        </p>
+
+
+        <div class="about-links">
+
+          <a href="mailto:ghwjd7281@kaist.ac.kr">
+            Email
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=Cq4lgFgAAAAJ&amp;hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Scholar
+          </a>
+
+          <a
+            href="https://github.com/cosmosjhj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            class="cv-link"
+            href="cv.pdf"
+            target="_blank"
+          >
+            CV
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Right biography -->
+
+      <div class="about-bio">
 
         <p>
           I am a Ph.D. student at the
@@ -50,50 +146,27 @@
           advised by Prof. Se-Young Yun.
         </p>
 
+
         <p>
           My research focuses on
-          <strong>fundamental algorithms and architectures for generative models</strong>,
+          <strong>
+            fundamental algorithms and architectures
+            for generative models
+          </strong>,
           with particular interests in
-          <strong>efficient generation, adaptive computation, and model architectures</strong>.
+          <strong>
+            efficient generation, adaptive computation,
+            and model architectures
+          </strong>.
         </p>
+
 
         <p>
           Recently, I have been particularly interested in
           <strong>recursive and looped architectures</strong>
-          and their applications to multimodal and generative models.
+          and their applications to multimodal,
+          generative, and world models.
         </p>
-
-      </div>
-
-
-      <div class="profile-links">
-
-        <a href="mailto:ghwjd7281@kaist.ac.kr">
-          Email
-        </a>
-
-        <a
-          href="https://scholar.google.com/citations?user=Cq4lgFgAAAAJ&amp;hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Scholar
-        </a>
-
-        <a
-          href="https://github.com/cosmosjhj"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="cv.pdf"
-          target="_blank"
-        >
-          CV
-        </a>
 
       </div>
 
@@ -101,231 +174,194 @@
 
 
 
-  <!-- =====================================================
-       NEWS
-  ====================================================== -->
-  
-  <section id="news" class="content-section">
-  
-    <h2>News</h2>
-  
-    <div class="news-list">
-  
-      <!-- 2026 -->
-  
-      <div class="news-row">
-  
-        <div class="news-date">
-          2026
-        </div>
-  
-        <div class="news-content">
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                4 papers accepted to NeurIPS 2026
-              </strong>
-              <span class="news-highlight">
-                — 3 as first author
-              </span>
-  
-              <ul class="news-papers">
-                <li>
-                  <strong>DualDrift</strong> —
-                  One-Step Generative Modeling
-                </li>
-  
-                <li>
-                  <strong>MolHIT</strong> —
-                  Hierarchical Discrete Diffusion for Molecular Graphs
-                </li>
-  
-                <li>
-                  <strong>Temporal Alignment Guidance</strong> —
-                  On-manifold Sampling in Diffusion Models
-                </li>
-  
-                <li>
-                  <strong>BASTION</strong> —
-                  Budget-Aware Speculative Decoding
-                </li>
-              </ul>
-  
-            </div>
+    <!-- =====================================================
+         NEWS
+    ====================================================== -->
+
+    <section class="section" id="news">
+
+      <h2 class="section-title">
+        News
+      </h2>
+
+
+      <ul class="news">
+
+
+        <li>
+
+          <span class="news-date">
+            2026
+          </span>
+
+          <div class="news-text">
+
+            <strong>
+              📄 4 papers accepted to NeurIPS 2026
+            </strong>
+
+            <span class="highlight">
+              — 3 as first author
+            </span>
+
+
+            <ul class="news-papers">
+
+              <li>
+                <strong>DualDrift</strong> —
+                Combining Forward and Reverse Drifts
+                for One-Step Generative Modeling
+              </li>
+
+              <li>
+                <strong>MolHIT</strong> —
+                Hierarchical Discrete Diffusion
+                for Molecular-Graph Generation
+              </li>
+
+              <li>
+                <strong>Temporal Alignment Guidance</strong> —
+                On-manifold Sampling in Diffusion Models
+              </li>
+
+              <li>
+                <strong>BASTION</strong> —
+                Budget-Aware Speculative Decoding
+              </li>
+
+            </ul>
+
           </div>
-  
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                1 paper accepted to ACL 2026 Findings
-              </strong>
-              <span class="news-highlight">
-                — first author
-              </span>
-  
-              <div class="news-detail">
-                Multi-Drafter Speculative Decoding with Alignment Feedback
-              </div>
-            </div>
-          </div>
-  
-  
-          <div class="news-entry">
-            <span class="news-icon">🏅</span>
-  
-            <div>
-              <strong>
-                UniSafe accepted to the NeurIPS 2026 AI4GOOD Workshop
-              </strong>
-              <span class="news-highlight">
-                — Oral
-              </span>
-            </div>
-          </div>
-  
-        </div>
-  
-      </div>
-  
-  
-      <!-- 2025 -->
-  
-      <div class="news-row">
-  
-        <div class="news-date">
-          2025
-        </div>
-  
-        <div class="news-content">
-  
-          <div class="news-entry">
-            <span class="news-icon">🏅</span>
-  
-            <div>
-              <strong>
-                KLASS accepted to NeurIPS 2025
-              </strong>
-              <span class="news-highlight">
-                — Spotlight
-              </span>
-            </div>
-          </div>
-  
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                1 paper accepted to ICLR 2025
-              </strong>
-  
-              <div class="news-detail">
-                Automated Filtering of Human Feedback Data
-                for Aligning Text-to-Image Diffusion Models
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
-      </div>
-  
-  
-      <!-- 2024 -->
-  
-      <div class="news-row">
-  
-        <div class="news-date">
-          2024
-        </div>
-  
-        <div class="news-content">
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                1 paper accepted to NeurIPS 2024
-              </strong>
-              <span class="news-highlight">
-                — first author
-              </span>
-  
-              <div class="news-detail">
-                Conditional Synthesis of 3D Molecules
-                with Time Correction Sampler
-              </div>
-            </div>
-          </div>
-  
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                1 paper accepted to EMNLP 2024 Findings
-              </strong>
-  
-              <div class="news-detail">
-                BAPO: Base-Anchored Preference Optimization
-              </div>
-            </div>
-          </div>
-  
-  
-          <div class="news-entry">
-            <span class="news-icon">📄</span>
-  
-            <div>
-              <strong>
-                1 paper accepted to the NeurIPS 2024 ENLSP Workshop
-              </strong>
-  
-              <div class="news-detail">
-                Speculative Decoding with Multiple Drafters
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
-      </div>
-  
-    </div>
-  
-  </section>
+
+        </li>
+
+
+
+        <li>
+
+          <span class="news-date">
+            2026
+          </span>
+
+          <span class="news-text">
+
+            📄
+            <strong>
+              1 paper accepted to ACL 2026 Findings
+            </strong>
+
+            <span class="highlight">
+              — first author
+            </span>
+
+            <span class="news-detail">
+              Multi-Drafter Speculative Decoding
+              with Alignment Feedback
+            </span>
+
+          </span>
+
+        </li>
+
+
+
+        <li>
+
+          <span class="news-date">
+            2026
+          </span>
+
+          <span class="news-text">
+
+            🏅
+            <strong>
+              UniSafe accepted to the NeurIPS 2026
+              AI4GOOD Workshop
+            </strong>
+
+            <span class="highlight">
+              — Oral
+            </span>
+
+          </span>
+
+        </li>
+
+
+
+        <li>
+
+          <span class="news-date">
+            2025
+          </span>
+
+          <span class="news-text">
+
+            🏅
+            <strong>
+              KLASS accepted to NeurIPS 2025
+            </strong>
+
+            <span class="highlight">
+              — Spotlight
+            </span>
+
+          </span>
+
+        </li>
+
+
+
+        <li>
+
+          <span class="news-date">
+            2024
+          </span>
+
+          <span class="news-text">
+
+            📄
+            <strong>
+              Conditional Synthesis of 3D Molecules
+              accepted to NeurIPS 2024
+            </strong>
+
+            <span class="highlight">
+              — first author
+            </span>
+
+          </span>
+
+        </li>
+
+
+      </ul>
+
+    </section>
 
 
 
     <!-- =====================================================
          RESEARCH
-
-         This is the section I would modify / reorder
-         depending on the team you apply to.
     ====================================================== -->
 
-    <section id="research" class="content-section">
+    <section class="section" id="research">
 
-      <h2>Research</h2>
+      <h2 class="section-title">
+        Research
+      </h2>
+
 
       <p class="research-intro">
+
         I am interested in developing new algorithms and architectures
         that improve how generative models
         <strong>generate, reason, and allocate computation</strong>.
-        My current research spans the following directions.
+
       </p>
 
 
-      <div class="research-list">
+      <div class="research-grid">
 
 
         <div class="research-topic">
@@ -336,8 +372,8 @@
 
           <p>
             Diffusion models, discrete diffusion,
-            flow-based generation, and
-            efficient generative algorithms.
+            flow-based generation,
+            and efficient generative algorithms.
           </p>
 
         </div>
@@ -351,8 +387,8 @@
 
           <p>
             Fast sampling, speculative decoding,
-            and efficient inference for
-            modern generative models.
+            and efficient inference
+            for modern generative models.
           </p>
 
         </div>
@@ -365,9 +401,10 @@
           </h3>
 
           <p>
-            Looped Transformers, parameter reuse,
-            adaptive computation, and
-            hybrid model architectures.
+            Looped Transformers,
+            parameter reuse,
+            adaptive computation,
+            and hybrid architectures.
           </p>
 
         </div>
@@ -380,9 +417,9 @@
           </h3>
 
           <p>
-            Generative modeling for dynamic and scientific systems,
-            including multimodal data, molecules,
-            proteins, and weather.
+            Generative modeling for multimodal
+            and scientific systems,
+            including molecules and weather.
           </p>
 
         </div>
@@ -398,19 +435,22 @@
          SELECTED WORK
     ====================================================== -->
 
-    <section id="work" class="content-section">
+    <section class="section" id="work">
 
-      <div class="section-header">
+      <div class="section-heading-row">
 
-        <h2>Selected Work</h2>
+        <h2 class="section-title">
+          Selected Work
+        </h2>
+
 
         <a
-          class="section-link"
+          class="all-publications"
           href="https://scholar.google.com/citations?user=Cq4lgFgAAAAJ&amp;hl=en"
           target="_blank"
           rel="noopener noreferrer"
         >
-          All publications →
+          Google Scholar →
         </a>
 
       </div>
@@ -421,18 +461,29 @@
 
       <article class="work-item">
 
-        <div class="work-year">
-          2026
+        <div class="work-meta">
+
+          <span class="work-label">
+            C9
+          </span>
+
+          <span>
+            NeurIPS 2026
+          </span>
+
         </div>
 
-        <div class="work-content">
+
+        <div class="work-body">
 
           <h3>
-            DualDrift: Combining Forward and Reverse Drifts
+            DualDrift:
+            Combining Forward and Reverse Drifts
             for One-Step Generative Modeling
           </h3>
 
-          <p class="work-authors">
+
+          <p class="authors">
             <strong>Hojung Jung*</strong>,
             Juhyeong Kim*,
             Jaehyun Kwak,
@@ -443,13 +494,9 @@
             Se-Young Yun
           </p>
 
-          <p class="work-venue">
-            NeurIPS 2026
-          </p>
 
-          <p class="work-description">
-            One-step generative modeling through combined forward
-            and reverse diffusion drifts.
+          <p class="venue">
+            NeurIPS 2026
           </p>
 
         </div>
@@ -462,31 +509,37 @@
 
       <article class="work-item">
 
-        <div class="work-year">
-          2026
+        <div class="work-meta">
+
+          <span class="work-label">
+            C7
+          </span>
+
+          <span>
+            NeurIPS 2026
+          </span>
+
         </div>
 
-        <div class="work-content">
+
+        <div class="work-body">
 
           <h3>
             Temporal Alignment Guidance:
             On-manifold Sampling in Diffusion Models
           </h3>
 
-          <p class="work-authors">
+
+          <p class="authors">
             Youngrok Park*,
             <strong>Hojung Jung*</strong>,
             Sangmin Bae,
             Se-Young Yun
           </p>
 
-          <p class="work-venue">
-            NeurIPS 2026
-          </p>
 
-          <p class="work-description">
-            Improving diffusion sampling through temporal alignment
-            and on-manifold guidance.
+          <p class="venue">
+            NeurIPS 2026
           </p>
 
         </div>
@@ -499,18 +552,29 @@
 
       <article class="work-item">
 
-        <div class="work-year">
-          2026
+        <div class="work-meta">
+
+          <span class="work-label">
+            C8
+          </span>
+
+          <span>
+            NeurIPS 2026
+          </span>
+
         </div>
 
-        <div class="work-content">
+
+        <div class="work-body">
 
           <h3>
-            MolHIT: Advancing Molecular-Graph Generation
+            MolHIT:
+            Advancing Molecular-Graph Generation
             with Hierarchical Discrete Diffusion Models
           </h3>
 
-          <p class="work-authors">
+
+          <p class="authors">
             <strong>Hojung Jung</strong>,
             Rodrigo Hormazabal,
             Jaehyeong Jo,
@@ -520,13 +584,9 @@
             Dae-Woong Jeong
           </p>
 
-          <p class="work-venue">
-            NeurIPS 2026
-          </p>
 
-          <p class="work-description">
-            Hierarchical discrete diffusion for
-            molecular-graph generation.
+          <p class="venue">
+            NeurIPS 2026
           </p>
 
         </div>
@@ -539,18 +599,29 @@
 
       <article class="work-item">
 
-        <div class="work-year">
-          2025
+        <div class="work-meta">
+
+          <span class="work-label">
+            C4
+          </span>
+
+          <span>
+            NeurIPS 2025
+          </span>
+
         </div>
 
-        <div class="work-content">
+
+        <div class="work-body">
 
           <h3>
-            KLASS: KL-Guided Fast Inference
+            KLASS:
+            KL-Guided Fast Inference
             in Masked Diffusion Models
           </h3>
 
-          <p class="work-authors">
+
+          <p class="authors">
             Seo Hyun Kim*,
             Sunwoo Hong*,
             <strong>Hojung Jung</strong>,
@@ -558,13 +629,9 @@
             Se-Young Yun
           </p>
 
-          <p class="work-venue">
-            NeurIPS 2025 · Spotlight
-          </p>
 
-          <p class="work-description">
-            Efficient inference for masked diffusion models
-            using KL-guided generation.
+          <p class="venue">
+            NeurIPS 2025 · Spotlight
           </p>
 
         </div>
@@ -580,20 +647,17 @@
          CONTACT
     ====================================================== -->
 
-    <section id="contact" class="content-section contact-section">
+    <section class="section" id="contact">
 
-      <h2>Contact</h2>
-
-      <p>
-        I am always happy to discuss research,
-        collaborations, and research internship opportunities.
-      </p>
+      <h2 class="section-title">
+        Contact
+      </h2>
 
       <p>
-        Email:
+        Feel free to contact me at
         <a href="mailto:ghwjd7281@kaist.ac.kr">
           ghwjd7281@kaist.ac.kr
-        </a>
+        </a>.
       </p>
 
     </section>
@@ -607,11 +671,9 @@
        FOOTER
   ====================================================== -->
 
-  <footer>
+  <footer class="footer">
 
-    <div class="container">
-      © 2026 Hojung Jung
-    </div>
+    Hojung Jung · ghwjd7281@kaist.ac.kr
 
   </footer>
 
