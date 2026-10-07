@@ -423,7 +423,7 @@ main {
 
 
 /* ============================================================
-   SELECTED WORK
+   PUBLICATIONS
 ============================================================ */
 
 .section-heading-row {
@@ -432,47 +432,25 @@ main {
 
 
 .section-heading-row .section-title {
-  padding-right: 160px;
+  padding-right: 170px;
 }
 
 
 .all-publications {
   position: absolute;
 
+  top: 3px;
   right: 0;
 
-  top: 3px;
-
   font-size: 14px;
-
   font-weight: 600;
 }
 
 
-.work-item {
-  display: grid;
+/* Legend */
 
-  grid-template-columns: 135px 1fr;
-
-  gap: 27px;
-
-  align-items: start;
-
-  padding: 18px 0;
-}
-
-
-.work-item + .work-item {
-  border-top: 1px solid var(--border);
-}
-
-
-.work-meta {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 3px;
+.publication-note {
+  margin: -5px 0 18px;
 
   color: var(--muted);
 
@@ -480,47 +458,99 @@ main {
 }
 
 
-.work-label {
+/* Year headings */
+
+.publication-year {
+  margin: 23px 0 7px;
+
+  color: var(--heading);
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+
+.publication-year:first-of-type {
+  margin-top: 10px;
+}
+
+
+/* Individual publication */
+
+.publication-item {
+  display: grid;
+
+  grid-template-columns: 58px 1fr;
+
+  gap: 17px;
+
+  align-items: start;
+
+  padding: 11px 0;
+}
+
+
+/* C1 / W1 labels */
+
+.publication-label {
+  padding-top: 2px;
+
   color: var(--link);
 
   font-family:
     ui-monospace,
     "SFMono-Regular",
     Menlo,
+    Monaco,
+    Consolas,
     monospace;
+
+  font-size: 14px;
 
   font-weight: 700;
 }
 
 
-.work-body h3 {
-  margin: 0 0 5px;
+.publication-label.workshop {
+  color: var(--muted);
+}
+
+
+/* Main publication content */
+
+.publication-body h3 {
+  margin: 0 0 3px;
 
   color: var(--heading);
 
-  font-size: 19px;
+  font-size: 18px;
 
-  line-height: 1.35;
+  line-height: 1.38;
 
   font-weight: 600;
 }
 
 
-.authors {
-  margin: 0 0 2px;
+.publication-authors {
+  margin: 0;
 
-  font-size: 16px;
+  color: var(--text);
+
+  font-size: 15px;
 
   line-height: 1.5;
 }
 
 
-.venue {
-  margin: 0;
+.publication-venue {
+  margin: 1px 0 0;
 
   color: var(--muted);
 
   font-size: 15px;
+
+  font-style: italic;
 }
 
 
