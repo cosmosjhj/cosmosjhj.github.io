@@ -636,31 +636,40 @@ main {
   }
 
 
-  .work-item {
-    grid-template-columns: 1fr;
-
-    gap: 6px;
-  }
-
-
-  .work-meta {
-    flex-direction: row;
-
-    gap: 10px;
-  }
+   .publication-item {
+     grid-template-columns: 48px 1fr;
+   
+     gap: 10px;
+   }
+   
+   
+   .publication-body h3 {
+     font-size: 17px;
+   }
+   
+   
+   .publication-authors,
+   .publication-venue {
+     font-size: 14px;
+   }
+   
+   
+   .section-heading-row .section-title {
+     padding-right: 0;
+   }
+   
+   
+   .all-publications {
+     position: static;
+   
+     display: inline-block;
+   
+     margin: -7px 0 13px;
+   }
 
 
   .section-heading-row .section-title {
     padding-right: 0;
-  }
-
-
-  .all-publications {
-    position: static;
-
-    display: inline-block;
-
-    margin: -7px 0 13px;
   }
 
 }
